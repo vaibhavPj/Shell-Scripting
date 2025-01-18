@@ -13,6 +13,6 @@ jobs:
       - name: Run shell Script
         run: |
           ls -lart
-          cd password generator
+          cd password_generator
           chmod +x password_generator.sh
           ./password_generator.sh
