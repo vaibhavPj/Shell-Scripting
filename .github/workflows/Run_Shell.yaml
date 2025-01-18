@@ -1,0 +1,16 @@
+name: Run shell script.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Run_Shell_Script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checout action
+        uses: actions/checkout@v4
+
+      - name: Run shell Script
+        run: |
+          chmod +x ./password generator/password_generator.sh
+          ./password generator/password_generator.sh
