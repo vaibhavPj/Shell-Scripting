@@ -12,5 +12,6 @@ jobs:
 
       - name: Run shell Script
         run: |
+          ls -lart
           chmod +x ./Shell-Scripting/password generator/password_generator.sh
           ./Shell-Scripting/password generator/password_generator.sh
